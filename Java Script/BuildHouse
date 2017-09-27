@@ -1,8 +1,11 @@
 //9/26/17
 //Ayesha Khan
 
-background(219, 255, 255);
+background(219, 255, 255);//sky
 
+//ground
+fill (47, 99, 52);
+rect (0, 350, 400, 100);
 
 //body
 fill(255, 255, 255);
