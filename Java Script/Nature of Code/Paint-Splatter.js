@@ -19,7 +19,7 @@ var draw = function() {
      var numx = genx.nextGaussian(); //nextGaussian rand for x
      var numy = geny.nextGaussian(); //nextGaussian rand for y
      //println(numy); check values incase
-     var sd = 50; //Standard deviation, fairly spread out
+     var sd = 65; //Standard deviation, fairly spread out
      var m = 200;//Mean, collect around the center (approx)
      
      //calculate the x and y values using the calculations faound fro standard deviation
