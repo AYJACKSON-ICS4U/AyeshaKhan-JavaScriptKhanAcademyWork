@@ -1,12 +1,13 @@
 //27/9/17
 //Ayesha Khan
-var xPositions = [200 ];
+var xPositions = [200];
 var yPositions = [0];
 
-var x = random (10, 400);
+
 
 draw = function() {
     background(204, 247, 255);
+    var x = random (10, 400);
     
     for (var i = 0; i < xPositions.length; i++) {
         noStroke();
@@ -16,10 +17,10 @@ draw = function() {
         
     
         
-        if (yPositions[i] === 410)
+      if (yPositions[i] > height)
     {
         yPositions[i] = 0;
-        xPositions.push(x);
+        xPositions[i] = x;
     }
       
     }
@@ -34,6 +35,3 @@ draw = function() {
     
     
 };
-  draw();
-
-/// was unable to figure out how to randomize the raindrops, something to work on later
