@@ -1,6 +1,4 @@
 //ayesha khan
-
-
 var Spaceship = function(x,y) {
 this.position = new PVector(200, 200); //Starts off in the middle of the screen
 this.velocity = new PVector(0,0); ///setting velocity equal to 0
@@ -54,7 +52,7 @@ popMatrix(); //going to the previously saved values
 
 };
 
-var s = new Spaceship(200,200); ///set player1 equal to the spaceship
+var player1 = new Spaceship(200,200); ///set player1 equal to the spaceship
 var draw = function() { //draw function
 background(255, 255, 255);// background
 
@@ -62,9 +60,9 @@ background(255, 255, 255);// background
 // if these keys are pressed then chenge the angles
 keyPressed = function() {
 if(keyCode === LEFT) {
-s.angle-=10;
+player1.angle-=10;
 } else if(keyCode === RIGHT) {
-s.angle+=10;
+player1.angle+=10;
 }
 };
 
@@ -80,9 +78,9 @@ player1.applyForce(thrust);
 
 
 /// calling the functions
-s.update();
-s.checkEdges();
-s.display(); 
+player1.update();
+player1.checkEdges();
+player1.display(); 
 
 
 };
