@@ -1,4 +1,4 @@
-## **Javascript: Nature of Code**
+## **Intro to HTML/CSS: Making webpages**
 
 #### _Project 1: Recipe book_
 
